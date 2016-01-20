@@ -10,12 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRC_PATH = ./srcs
+SRC_NAME = ./srcs
 
 SRC_PATH = 	fillit.c ft_aff_grid.c ft_carre_min.c ft_error.c\
-		ft_full_grid.c ft_main.c ft_main_reset.c ft_more_grid.c\
-		ft_read.c ft_reset_grid.c ft_tall_len.c ft_teti_put.c\
-		ft_verif_teti_grid.c
+		ft_full_grid.c ft_good_teti.c ft_main.c ft_main_reset.c\
+		ft_more_grid.c ft_read.c ft_reset_grid.c ft_tall_len.c\
+		ft_teti_put.c ft_verif_grid.c
 
 LIB_NAME = 	ft_atoi.c\
 		ft_bzero.c\
@@ -88,7 +88,7 @@ CPPFLAGS = -I./includes
 LDFLAGS = -Llibft
 LDLIBS = -lft
 		
-NAME = -fillit
+NAME = fillit
 
 CC = gcc
 
@@ -127,7 +127,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
-norme:
-
-	norminette $(SRC)

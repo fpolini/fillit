@@ -14,15 +14,12 @@
 
 void	ft_putstr(char const *s)
 {
-	char	c;
-	int		i;
+	size_t	i;
 
 	i = 0;
-	c = s[0];
-	while (s[i] != '\0')
+	while (s && i < ft_strlen(s))
 	{
-		c = s[i];
-		write(1, &c, 1);
+		ft_putchar(s[i]);
 		i = i + 1;
 	}
 }

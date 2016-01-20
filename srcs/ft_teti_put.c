@@ -1,6 +1,6 @@
 #include "fillit.h"
 
-int	ft_teti_put(char *teti, char *grid, int i, int j)
+int	ft_teti_put(char *grid, char *teti, int j, int i)
 {
 	int	p;
 	int	tall;
@@ -12,10 +12,10 @@ int	ft_teti_put(char *teti, char *grid, int i, int j)
 	{
 		teti[i] -= 32// du coup plus besoin de ca si A
 		grid[j] = teti[i];
-		i = i + 1;
-		p += ft_teti_put(grid, teti, i + 1, j + 1);
-		p += ft_teti_put(grid, teti, i + 5, j + (tall + 1));
-		p += ft_teti_put(grid, teti, i - 1, j - 1);
+		p = p + 1;
+		p += ft_teti_put(grid, teti, j + 1, i + 1);
+		p += ft_teti_put(grid, teti, j + (tall + 1), i + 5);
+		p += ft_teti_put(grid, teti, j - 1, i - 1);
 	}
 	return (p);
 }

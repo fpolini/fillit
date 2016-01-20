@@ -23,16 +23,16 @@ void	fillit(char *file)
 	{
 		if (i % 21 == 0)
 		{
-			tetiss[j] = ft_strdup(verif_t(ft_strsub(in_file, i - 21, 20), j));
+			tetiss[j] = ft_strdup(ft_verif_grid(ft_strsub(in_file, i - 21, 20), j));
 			j = j + 1;
 		}
 	}
 	if (in_file[i] == '\0')
-		tetiss[j] = ft_strdup(verif_t(ft_strsub(in_file, i - 21, 20), j));
+		tetiss[j] = ft_strdup(ft_verif_grid(ft_strsub(in_file, i - 21, 20), j));
 	tetiss[j + 1] = NULL;
 	free(in_file);
-	t_algo(tetiss, j);
-	ft_tab_free(tetiss);
+	ft_main(tetiss, j);
+	ft_freetab(tetiss);
 }
 
 int	main(int argc, char **argv)

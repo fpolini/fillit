@@ -21,6 +21,7 @@
 
 # define BUFF_SIZE 546
 
+
 void	fillit(char *file);
 void	ft_error(void);
 char	*ft_read(char *file);
@@ -32,6 +33,7 @@ void	ft_main_reset(char **grid, char **teti, int i, int size);
 char	*ft_more_grid(char *grid, int size);
 void	ft_reset_grid(char *teti, char *grid, int i, int j);
 int	ft_tall_len(char *str);
-int	ft_teti_put(char *teti, char *grid, int i, int j);
-char	*ft_verif_teti_grid(char *teti, int nb_teti);
+int	ft_teti_put(char *grid, char *teti, int j, int i);
+char	*ft_verif_grid(char *teti, int nb_teti);
+int	ft_good_teti(char *teti, char nb_teti, int i);
 #endif
