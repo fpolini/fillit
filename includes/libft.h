@@ -25,7 +25,7 @@ typedef struct	s_list
 }				t_list;
 
 int				ft_tall_list(t_list *lst);
-void			ft_freetab(char **tab);
+void			ft_freetab(char **tbl);
 int				ft_tall_tab(char **tab);
 void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));

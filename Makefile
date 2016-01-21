@@ -10,12 +10,12 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRC_NAME = ./srcs
+SRC_PATH = ./srcs
 
-SRC_PATH = 	fillit.c ft_aff_grid.c ft_carre_min.c ft_error.c\
-		ft_full_grid.c ft_good_teti.c ft_main.c ft_main_reset.c\
-		ft_more_grid.c ft_read.c ft_reset_grid.c ft_tall_len.c\
-		ft_teti_put.c ft_verif_grid.c
+SRC_NAME = 	fillit.c ft_aff_grid.c ft_carre_min.c ft_error.c\
+		ft_good_teti.c ft_grid_plus.c ft_main.c ft_main_rec.c \
+		ft_put_grid.c ft_put_teti.c ft_read.c ft_reset_grid.c ft_tall.c\
+		ft_te_gri_verif.c ft_teti_verif.c\
 
 LIB_NAME = 	ft_atoi.c\
 		ft_bzero.c\
@@ -35,6 +35,7 @@ LIB_NAME = 	ft_atoi.c\
 		ft_memcpy.c\
 		ft_memmove.c\
 		ft_memset.c\
+		ft_putchar.c\
 		ft_putendl.c\
 		ft_putendl_fd.c\
 		ft_putnbr.c\

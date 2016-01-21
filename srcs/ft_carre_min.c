@@ -1,11 +1,12 @@
 #include "fillit.h"
 
-int	ft_carre_min(int nb_teti)
+int	ft_carre_min(int teti_nb)
 {
-	int	tall_side;
+	int		tall;
 
-	tall_side = 2;
-	while ((nb_teti * 4) > (tall_side * tall_side))
-		tall_side = tall_side + 1;
-	return (tall_side);
+	tall = 2;
+	while ((teti_nb * 4) > (tall * tall))
+		tall++;
+	return (tall);
 }
+

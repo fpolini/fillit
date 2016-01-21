@@ -17,23 +17,23 @@
 # include <stdlib.h>
 # include <libft.h>
 # include <fcntl.h>
-# include <stdio.h>
 
 # define BUFF_SIZE 546
 
 
-void	fillit(char *file);
-void	ft_error(void);
-char	*ft_read(char *file);
-void	ft_aff_grid(char *grid);
-int	ft_carre_min(int nb_teti);
-void	ft_full_grid(char *grid, int size);
-void	ft_main(char **teti, int nb_teti);
-void	ft_main_reset(char **grid, char **teti, int i, int size);
-char	*ft_more_grid(char *grid, int size);
-void	ft_reset_grid(char *teti, char *grid, int i, int j);
-int	ft_tall_len(char *str);
-int	ft_teti_put(char *grid, char *teti, int j, int i);
-char	*ft_verif_grid(char *teti, int nb_teti);
-int	ft_good_teti(char *teti, char nb_teti, int i);
+void		ft_aff_grid(char *grid);
+char		*ft_read(char *file);
+void		ft_error(void);
+void		fillit(char *file);
+char		*ft_teti_verif(char *teti, int teti_nb);
+int		ft_te_gri_verif(char *teti, int teti_nb);
+int		ft_tall(char *str);
+void		ft_reset_grid(char *grid, char *teti, int i, int j);
+int		ft_put_teti(char *grid, char *teti, int j, int i);
+void		ft_put_grid(char *grid, int size);
+int		ft_main_rec(char **grid, char **teti, int i, int size);
+void		ft_main(char **teti, int teti_nb);
+char		*ft_grid_plus(char *grid, int size);
+int		ft_good_teti(char *teti, char teti_nb, int i);
+int		ft_carre_min(int teti_nb);
 #endif
