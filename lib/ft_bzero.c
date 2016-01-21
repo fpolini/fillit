@@ -6,7 +6,7 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 15:03:28 by fpolini           #+#    #+#             */
-/*   Updated: 2015/12/02 17:57:12 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/21 19:34:29 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,10 @@ void	ft_bzero(void *s, size_t n)
 
 	i = 0;
 	save_str = s;
-	ft_memset(s, 0, n);
+	while (i < n)
+	{
+		*save_str = '\0';
+		i = i + 1;
+		save_str = save_str + 1;
+	}
 }
