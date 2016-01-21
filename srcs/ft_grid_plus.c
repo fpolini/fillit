@@ -9,7 +9,7 @@ char		*ft_grid_plus(char *grid, int size)
 	j = 0;
 	i = 0;
 	str = NULL;
-	ft_bzero((str = ft_strnew((size * size) + size)), (size * size) + size);
+	str = ft_strnew((size * size) + size);
 	ft_put_grid(str, size);
 	while (grid[i])
 	{
