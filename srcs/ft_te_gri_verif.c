@@ -17,7 +17,7 @@ int	ft_te_gri_verif(char *teti, int teti_nb)
 			j = ft_good_teti(teti, teti_nb, i);
 		i++;
 	}
-	if (i != 20 || j != 4 || k != 12)
+	if (i != 19 || j != 4 || k != 12)
 		ft_error();
 	return (1);
 }

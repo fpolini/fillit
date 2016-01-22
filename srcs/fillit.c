@@ -6,7 +6,9 @@ void	fillit(char *file)
 	char	**tetiss;
 	int		i;
 	int		j;
+	int		k;
 
+	k = 20;
 	i = 20;
 	j = 0;
 	in_file = ft_read(file);
@@ -15,12 +17,12 @@ void	fillit(char *file)
 	{
 		if (i % 21 == 0)
 		{
-			tetiss[j] = ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 21, 20), j));
+			tetiss[j] = ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 21, 19), j));
 			j++;
 		}
 	}
 	if (in_file[i] == '\0')
-		tetiss[j] = ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 21, 20), j));
+		tetiss[j] = ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 20, 19), j));
 	tetiss[j + 1] = NULL;
 	free(in_file);
 	ft_main(tetiss, j);
