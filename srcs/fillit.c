@@ -6,23 +6,11 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/22 14:48:32 by fpolini           #+#    #+#             */
-/*   Updated: 2016/01/22 16:44:08 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/22 17:35:30 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-
-static void	verif_file(char *in_file)
-{
-	int		k;
-
-	k = 0;
-	while (in_file[++k] != '\0')
-	{
-		if (in_file[k] != '.' && in_file[k] != '\n' && in_file[k] != '#')
-			ft_error();
-	}
-}
 
 void		fillit(char *file)
 {
@@ -34,7 +22,6 @@ void		fillit(char *file)
 	i = 20;
 	j = 0;
 	in_file = ft_read(file);
-	verif_file(in_file);
 	tetiss = (char **)malloc(sizeof(char*) * 27);
 	while (in_file[++i] != '\0')
 	{
