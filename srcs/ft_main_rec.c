@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_main_rec.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/01/22 15:42:49 by fpolini           #+#    #+#             */
+/*   Updated: 2016/01/22 15:42:56 by fpolini          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fillit.h"
 
 int			ft_main_rec(char **grid, char **teti, int i, int size)
@@ -28,4 +40,3 @@ int			ft_main_rec(char **grid, char **teti, int i, int size)
 	free(grid2);
 	return (0);
 }
-

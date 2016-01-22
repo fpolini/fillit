@@ -6,7 +6,7 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 18:33:00 by fpolini           #+#    #+#             */
-/*   Updated: 2015/12/18 18:44:25 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/22 15:48:43 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static void	ft_putunbr(unsigned int n)
 	ft_putchar((n % 10) + '0');
 }
 
-void	ft_putnbr(int n)
+void		ft_putnbr(int n)
 {
 	if (n < 0)
 	{

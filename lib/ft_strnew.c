@@ -6,7 +6,7 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 15:15:15 by fpolini           #+#    #+#             */
-/*   Updated: 2015/12/18 16:56:54 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/22 15:49:09 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnew(size_t size)
 {
 	char	*new;
-	
+
 	new = (char*)ft_memalloc((size + 1) * sizeof(char));
 	return (new);
 }
