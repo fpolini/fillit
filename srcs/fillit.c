@@ -6,11 +6,13 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/22 14:48:32 by fpolini           #+#    #+#             */
-/*   Updated: 2016/01/25 16:09:50 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/25 16:23:31 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
+
+static char *file1(char **te
 
 void		fillit(char *file)
 {
