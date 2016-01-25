@@ -6,7 +6,7 @@
 /*   By: fpolini <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/22 14:48:32 by fpolini           #+#    #+#             */
-/*   Updated: 2016/01/22 17:35:30 by fpolini          ###   ########.fr       */
+/*   Updated: 2016/01/25 16:09:50 by fpolini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,13 @@ void		fillit(char *file)
 		}
 	}
 	if (in_file[i] == '\0')
-		tetiss[j] =
-			ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 20, 19), j));
+	{
+		if (ft_strlen(in_file) == 20)
+			tetiss[j] = ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 21, 19), j));
+		else
+			tetiss[j] =
+				ft_strdup(ft_teti_verif(ft_strsub(in_file, i - 20, 19), j));
+	}
 	tetiss[j + 1] = NULL;
 	free(in_file);
 	ft_main(tetiss, j);
